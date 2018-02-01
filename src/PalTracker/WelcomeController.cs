@@ -5,14 +5,21 @@ namespace PalTracker
     [Route("/")]
     public class WelcomeController : ControllerBase
     {
-        private readonly WelcomeMessage _message;
+        WelcomeMessage welcomemsg;
 
-        [HttpGet]
-        public string SayHello() => _message.Message;
-
-        public WelcomeController(WelcomeMessage message)
+        public WelcomeController(WelcomeMessage welmsg_arg)
         {
-            _message = message;
-        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            welcomemsg = welmsg_arg;
+        }
+        [HttpGet()]
+        public string SayHello() 
+        {
+            /*             
+            System.Diagnostics.Debug.WriteLine("#Request.Path  = " + Request.Path );
+            System.Diagnostics.Debug.WriteLine("#Request.Host  = " + Request.Host);
+            System.Diagnostics.Debug.WriteLine("#Request.Query  = " + Request.Query );
+            */
+            return welcomemsg.Message;
+        } 
     }
 }
