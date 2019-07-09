@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions;
 using PalTracker;
 using Xunit;
 
@@ -10,7 +10,7 @@ namespace PalTrackerTests
         [Fact]
         public void Get()
         {
-            var cloudFoundryInfo = new CloudFoundryInfo(
+             var cloudFoundryInfo = new CloudFoundryInfo(
                 "8080",
                 "512M",
                 "1",
