@@ -1,7 +1,7 @@
 ---
 applications:
 - name: pal-tracker
-  path: src/PalTracker/bin/Release/netcoreapp2.2/publish/
+  path: src/PalTracker/bin/Release/netcoreapp2.1/publish/
   routes:
   - route: pal-tracker-grouchy-rhinocerous.cfapps.io
   env:
