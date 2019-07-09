@@ -1,7 +1,8 @@
 ---
 applications:
-- name: pal-tracker
+- name: pal-trackerprod
   path: src/PalTracker/bin/Release/netcoreapp2.2/publish/
-  random-route: true
+  routes:
+  - route: pal-tracker-mak-laks.cfapps.io
   env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry Prod
+    WELCOME_MESSAGE: Hello from the production environment
