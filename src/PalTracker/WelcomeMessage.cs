@@ -5,7 +5,7 @@ namespace PalTracker
         public string Message {get;}
         public WelcomeMessage(string message)
         {
-            Message=message+"hi hi";
+            Message=message;
         }
     }
 }
