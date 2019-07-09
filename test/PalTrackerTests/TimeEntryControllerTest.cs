@@ -46,7 +46,7 @@ namespace PalTrackerTests
 
             var typedResponse = response as NotFoundResult;
 
-            Assert.Equal(404, typedResponse.StatusCode);
+            Assert.Equal(404, typedResponse.StatusCode); 
         }
 
         [Fact]
