@@ -12,11 +12,8 @@ namespace PalTracker
             var id = _timeEntries.Count + 1;
 
             timeEntry.Id = id;
-            timeEntry.ProjectId=44;
-            
 
             _timeEntries.Add(id, timeEntry);
-            
 
             return timeEntry;
         }
