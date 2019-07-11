@@ -31,7 +31,7 @@ namespace PalTracker
         public void ConfigureServices(IServiceCollection services)
         {
 
-		services.AddCloudFoundryActuators(Configuration);
+		    services.AddCloudFoundryActuators(Configuration);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddSingleton(sp => new WelcomeMessage(
